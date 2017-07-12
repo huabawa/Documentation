@@ -1,0 +1,65 @@
+//Hello Dr. Rob I couldn't find the Student Research file in ccs, so I am creating a temporary file here.
+
+If you are a student like me who would like to use the cloud for research purposes, then you are at the right place. The following steps will walk you through
+how to get a cloud account and and how to use the cloud to make your work flow much simpler.
+
+1. Create an AWS account through us. This is as simple as emailing .... to get an AWS account set up.
+
+Once we have set up an account for you, you will receive an Account number, User Name, and Password. This is a private account, so please do not share this information
+with anyone.
+
+2. Choose the solution that you would like to build.
+
+3. Click on Launch a virtual machine in Build a Solution.
+
+  1. In the AWS console https://console.aws.amazon.com, click on Launch a virtual machine. For information about EC2 instance pricing, visit https://aws.amazon.com/ec2/pricing/on-demand/ where you can find out about the cost to run EC2 Instance on different operating systems.
+  
+  2. Click on Get Started. Type in a name for your EC2 Instance. Example: MyFirstInstance
+  
+  3. Select an Operating System. Example: Amazon Linux AMI
+  
+  4. Select an Instance Type. Example: t2.micro (You can check for the price of this Instance Type by going to https://aws.amazon.com/ec2/pricing/on-demand/)
+  
+  5. Create a Key Pair and download and save it in a safe place on your computer.
+  
+  Congratualtions! You have successfully launched your own EC2 Instance.
+  
+Where do I find the EC2 Dashboard?
+
+Click on the Services tab in the AWS console. Under Compute, click on EC2. 
+
+Connecting to your Linux Instance Using SSH from Terminal or Command Prompt
+
+1. Go to the Folder where you saved your key pair file in Terminal. 
+
+2. Type ssh ec2-user@12.123.56.110 -i KeypairName.pem 
+
+If WARNING: UNPROTECTED PRIVATE KEY FILE! appears, type ls -al Fir* in the terminal to check the permissions. This will be in a format like the this: -r--rw-r--
+Then, type chmod 400 FirstInstance.pem in the terminal to change the permissions to -r--------
+Hit enter and then press the up arrow key to return to ssh ec2-user@12.123.56.110 -i KeypairName.pem
+
+3. When you have successfully accessed your Linux Instance, you will see the following.
+
+If you are asked to run sudo yum update, type this in to apply all updates. Complete! will show when the updating is done.
+
+For a more detailed instruction, visit http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
+
+Congratualtions! You have successfully connected to your linux instance.
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
