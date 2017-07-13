@@ -105,3 +105,6 @@ kilroy here is the segment on how to use the cost tool
 
 
 {% include links.html %}
+
+## Getting Started with AWS Cloud. 
+
